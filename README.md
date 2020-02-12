@@ -1,1 +1,1 @@
-# 4Clojure-Solutions
+Solutions to the problems over at [4Clojure](4clojure.com)!
