@@ -4,8 +4,8 @@
 
 ; Can't use: last
 
-(= (get-last [1 2 3 4 5]) 5) ; => true
-(= (get-last '(5 4 3)) 3)  ; => true
-(= (get-last ["b" "c" "d"]) "d")  ; => true
+(= (last-element [1 2 3 4 5]) 5) ; => true
+(= (last-element '(5 4 3)) 3)  ; => true
+(= (last-element ["b" "c" "d"]) "d")  ; => true
 
-(defn get-last [x] (first (reverse x)))
+(defn last-element [x] (first (reverse x)))
