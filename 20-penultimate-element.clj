@@ -2,8 +2,8 @@
 ; (= (__ ["a" "b" "c"]) "b")
 ; (= (__ [[1 2] [3 4]]) [1 2])
 
-(= (second-to-last (list 1 2 3 4 5)) 4) ; => true
-(= (second-to-last ["a" "b" "c"]) "b") ; => true
-(= (second-to-last [[1 2] [3 4]]) [1 2]) ; => true
+(= (penultimate-element (list 1 2 3 4 5)) 4) ; => true
+(= (penultimate-element ["a" "b" "c"]) "b") ; => true
+(= (penultimate-element [[1 2] [3 4]]) [1 2]) ; => true
 
-(defn second-to-last [x] (first (rest (reverse x))))
+(defn penultimate-element [x] (first (rest (reverse x))))
