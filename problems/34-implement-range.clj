@@ -9,3 +9,5 @@
 (= (my-range 1 4) '(1 2 3)) ; => true
 (= (my-range -2 2) '(-2 -1 0 1)) ; => true
 (= (my-range 5 8) '(5 6 7)) ; => true
+
+; Cool alt solution: #(take (- %2 %1) (iterate inc %1))
