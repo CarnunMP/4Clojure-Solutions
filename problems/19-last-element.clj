@@ -8,4 +8,4 @@
 (= (last-element '(5 4 3)) 3)  ; => true
 (= (last-element ["b" "c" "d"]) "d")  ; => true
 
-(defn last-element [x] (first (reverse x)))
+(defn last-element [x] (first (reverse x))) ; [note: 4clojure.com doesn't like defn!]

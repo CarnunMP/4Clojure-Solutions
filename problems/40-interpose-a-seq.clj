@@ -2,7 +2,7 @@
 ; (= (apply str (__ ", " ["one" "two" "three"])) "one, two, three")
 ; (= (__ :z [:a :b :c :d]) [:a :z :b :z :c :z :d])
 
-(fn my-int [v s]
+(defn my-int [v s] ; [note: 4clojure.com doesn't like defn!]
   (drop-last (flatten (map #(concat (list %) (list v)) s))))
 
 (= (my-int 0 [1 2 3]) [1 0 2 0 3]) ; => true

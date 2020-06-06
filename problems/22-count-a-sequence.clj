@@ -12,4 +12,4 @@
 (= (county '(13)) 1) ; => true
 (= (county '(:a :b :c)) 3) ; => true
 
-(defn county [sq] (apply + (map (fn [x] 1) sq)))
+(defn county [sq] (apply + (map (fn [x] 1) sq))) ; [note: 4clojure.com doesn't like defn!]

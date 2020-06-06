@@ -6,4 +6,4 @@
 (= (say-hello "Jenn") "Hello, Jenn!") ; => true
 (= (say-hello "Rhea") "Hello, Rhea!") ; => true
 
-(defn say-hello [s] (apply str ["Hello, " s "!"]))
+(defn say-hello [s] (apply str ["Hello, " s "!"]))  ; [note: 4clojure.com doesn't like defn!]
