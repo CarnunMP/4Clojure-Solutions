@@ -2,7 +2,7 @@
 ; (= (__ -2 2) '(-2 -1 0 1))
 ; (= (__ 5 8) '(5 6 7))
 
-(fn my-range [n1 n2]
+(defn my-range [n1 n2] ; [note: 4clojure.com doesn't like defn!]
   (when (< n1 n2)
     (cons n1 (my-range (inc n1) n2))))
 

@@ -4,7 +4,7 @@
 
 ; from https://stackoverflow.com/questions/37244971/how-can-i-recursively-flatten-arbitrarily-nested-vectors-and-maps-in-clojure:
 
-(fn my-flatten [x]
+(defn my-flatten [x] ; [note: 4clojure.com doesn't like defn!]
   (if (coll? x)
     (mapcat my-flatten x)
     [x]))

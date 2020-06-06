@@ -6,4 +6,4 @@
 (= (penultimate-element ["a" "b" "c"]) "b") ; => true
 (= (penultimate-element [[1 2] [3 4]]) [1 2]) ; => true
 
-(defn penultimate-element [x] (first (rest (reverse x))))
+(defn penultimate-element [x] (first (rest (reverse x)))) ; [note: 4clojure.com doesn't like defn!]

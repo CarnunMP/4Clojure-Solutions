@@ -10,4 +10,4 @@
 (= (nth [1 2 3 4] 1) 2) ; => true
 (= (nth '([1 2] [3 4] [5 6]) 2) [5 6]) ; => true
 
-(defn nth [x i] (last (take (inc i) x)))
+(defn nth [x i] (last (take (inc i) x))) ; [note: 4clojure.com doesn't like defn!]

@@ -4,7 +4,7 @@
 ; (= (__ 1023 858) 33)
 
 ; Eulid's algorithm: https://en.wikipedia.org/wiki/Greatest_common_divisor#Euclid's_algorithm
-(fn gcd [a b]
+(defn gcd [a b] ; [note: 4clojure.com doesn't like defn!]
   (if (zero? b)
     a
     (recur b (mod a b))))

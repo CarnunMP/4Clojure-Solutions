@@ -2,7 +2,7 @@
 ; (= (__ (range 9) 3) '((0 3 6) (1 4 7) (2 5 8)))
 ; (= (__ (range 10) 5) '((0 5) (1 6) (2 7) (3 8) (4 9)))
 
-(fn reverse-interleave [s n] 
+(defn reverse-interleave [s n] ; [note: 4clojure.com doesn't like defn!]
   (apply map list (partition n s)))
 
 ; Note, solution depends on this property of map: "Returns a lazy sequence consisting of

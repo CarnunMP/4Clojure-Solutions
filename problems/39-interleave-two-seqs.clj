@@ -16,7 +16,7 @@
 ; )
 
 ; Second, after much reading:
-(defn my-interleave [seq1 seq2]
+(defn my-interleave [seq1 seq2] ; [note: 4clojure.com doesn't like defn!]
   (flatten (map list seq1 seq2))
 )
 

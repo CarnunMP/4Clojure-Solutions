@@ -2,7 +2,7 @@
 ; Your function should return true if some of the parameters are true, but not all of the parameters are true. 
 ; Otherwise your function should return false.
 
-(fn some-true [& args]
+(defn some-true [& args] ; [note: 4clojure.com doesn't like defn!]
   (if (or (= nil (some true? args)) (= nil (some false? args)))
     false
     true))
