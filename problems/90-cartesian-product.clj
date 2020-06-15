@@ -26,3 +26,13 @@
 
 (= 300 (count (cartesian-product (into #{} (range 10))
   (into #{} (range 30))))) ; => true
+
+; Note: could have used _mapcat_ instead of _map_ then _concat_! Like so:
+
+(defn cartesian-product2 [s1 s2] ; [note: 4clojure.com doesn't like defn!]
+  (set (mapcat #(for [symbol s2] [% symbol]) s1)))
+
+; Or a straight-up list comp, without mapping (?):
+
+(defn cartesian-product3 [s1 s2]
+  (set (for [x s1 y s2] [x y])))
