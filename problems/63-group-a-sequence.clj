@@ -34,6 +34,4 @@
 (defn better-group-by [f coll] 
   (apply merge-with concat (map (fn [v] {(f v) [v]}) coll)))
 
-(concat (map (fn [v] {(#(apply / %) v) [v]}) [[1 2] [2 4] [4 6] [3 6]]))
-
 ; Looks like the idea was to produce a bunch of maps (one for each element of coll), then merge them...
