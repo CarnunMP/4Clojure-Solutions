@@ -10,3 +10,5 @@
 
 (comment
   (take 10 (oscilrate 1 dec inc #(* 5 %))))
+
+;; Edit: Ooooh! Theres a much shorter solution using `reductions` and `cycle`. Neat!
